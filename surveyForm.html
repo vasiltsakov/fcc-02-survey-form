@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="surveyForm.css">
+    <title>Fill Our Survey</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">FILL IN OUR SURVEY</h1>
+    </header>
+    <section class="survey-form">
+        <p id="description" class="description">Please fill in the form below to give your 
+            opinion on the quality of our services.</p>
+        <form id="survey-form" >
+            <div class="form-row">
+                <label for="name" id="name-label"> Your name:</label>
+                <input type="text" name="name" id="name" 
+                placeholder="enter your name" required>
+            </div>
+            <div class="form-row">
+                <label for="email" id="email-label"> Your email:</label>
+                <input type="email" name="email" id="email" 
+                placeholder="enter your email" required>
+            </div>
+            <div class="form-row">
+                <label for="age" id="number-label"> Your age:</label>
+                <input type="number" name="age" id="number" min="17" max="100" 
+                placeholder="enter your age">
+            </div>
+            <div class="form-row">    
+                <label for="service" id="labelSelect"> What service did you buy:</label>
+                <select name="service" id="dropdown">
+                    <option value="">-please choose from the list-</option>
+                    <option value="website">Making a website</option>
+                    <option value="mobile">Creating a mobile application</option>
+                    <option value="banner">Ad banner</option>
+                    <option value="another">Another service</option>
+                </select>
+            </div>
+                <fieldset class="legacy-form-row">
+                    <legend>Are you satisfied with our services?</legend>
+                    <input type="radio" name="satisfied" id="yes" value="yes"> <label for="yes" class="radio-label">Yes</label> 
+                    <input type="radio" name="satisfied" id="medium" value="medium"> <label for="medium" class="radio-label">Medium</label>
+                    <input type="radio" name="satisfied" id="no" value="no"><label for="no" class="radio-label">No</label>
+                </fieldset>
+                <p id="header-checkbox" class="description">What do you think are our strongest points?</p>
+            <div class="form-row-checkbox">
+                <label for="speed" class="checkbox-label">
+                <input type="checkbox" name="speed" id="speed" value="speed"> Speed</label>
+                <label for="correctness" class="checkbox-label">
+                <input type="checkbox" name="correctness" id="correctness" value="correctness"> Correctness</label>
+                <label for="accuracy" class="checkbox-label">
+                <input type="checkbox" name="accuracy" id="accuracy" value="accuracy"> Accuracy</label>
+                <label for="politeness" class="checkbox-label">
+                <input type="checkbox" name="politeness" id="politeness" value="politeness">  Politeness</label>
+            </div>
+            
+            <div class="form-row">
+                <label for="addComments">Additional comments:</label>
+                <textarea name="addComments" id="addComments">If you have advice or comments about our work, please fill in here.</textarea>
+                
+            </div>
+            <div class="form-row">    
+                <input type="submit" value="Submit" id="submit">
+            </div>
+        </form>
+    </section>
+</body>
+</html>
